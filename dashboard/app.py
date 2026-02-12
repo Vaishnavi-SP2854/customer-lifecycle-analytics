@@ -3,6 +3,23 @@ import pandas as pd
 import numpy as np
 import joblib
 
+
+import os
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+DATA_PATH = os.path.join(
+    BASE_DIR, "data", "processed", "customer_lifecycle_final.csv"
+)
+
+MODEL_PATH = os.path.join(
+    BASE_DIR, "models", "churn_model.pkl"
+)
+
+df = pd.read_csv(DATA_PATH)
+model = joblib.load(MODEL_PATH)
+
+
 # -----------------------------
 # Page Configuration
 # -----------------------------
@@ -13,6 +30,9 @@ st.set_page_config(
 
 st.title("📊 Customer Lifecycle Analytics Dashboard")
 st.markdown("Analyze churn risk, customer value, and retention priorities")
+st.write(DATA_PATH)
+
+
 
 # -----------------------------
 # Load Data & Model
@@ -27,6 +47,12 @@ def load_model():
 
 df = load_data()
 model = load_model()
+
+st.write("📂 Data path being used:")
+st.code(DATA_PATH)
+
+df = pd.read_csv("../data/processed/customer_lifecycle_final.csv")
+
 
 # -----------------------------
 # KPI Section
