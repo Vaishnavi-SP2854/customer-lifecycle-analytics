@@ -163,3 +163,6 @@ use cases.
 - Experiment with advanced models (Random Forest, XGBoost)
 - Add time-based churn analysis if historical data is available
 - Integrate model predictions into a live monitoring system
+
+
+Author name 
