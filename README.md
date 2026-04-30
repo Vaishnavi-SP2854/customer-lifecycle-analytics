@@ -5,7 +5,7 @@ Customer churn is a major challenge for subscription-based and service-driven
 businesses. This project focuses on analyzing customer lifecycle data to
 identify churn patterns, key retention drivers, and customer lifetime trends.
 
-The project goes beyond basic exploratory analysis by incorporating
+The project goes beyond basic exploratory analysis by incorporating.
 feature engineering, churn prediction modeling, churn risk segmentation,
 and customer lifetime value (CLV) analysis to support data-driven
 retention strategies.
