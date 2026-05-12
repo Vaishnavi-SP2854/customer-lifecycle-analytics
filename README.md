@@ -10,7 +10,7 @@ feature engineering, churn prediction modeling, churn risk segmentation,
 and customer lifetime value (CLV) analysis to support data-driven
 retention strategies.
 
----
+-
 
 ## 🎯 Business Objectives
 - Identify patterns and drivers of customer churn
